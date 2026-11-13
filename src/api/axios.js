@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api/v1',
+  baseURL: 'https://ai-assisstant-backend-ryl3.vercel.app/api/v1',
   withCredentials: true, // Required for req.cookies.refresh_token
 });
 
