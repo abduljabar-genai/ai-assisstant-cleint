@@ -1,7 +1,8 @@
 import axios from 'axios';
 
+const backend_url= import.meta.env.VITE_BACKEND_URL
 const api = axios.create({
-  baseURL: 'https://ai-assisstant-backend-ryl3.vercel.app/api/v1',
+  baseURL: backend_url,
   withCredentials: true, // Required for req.cookies.refresh_token
 });
 

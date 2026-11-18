@@ -15,7 +15,7 @@ export default function Quiz() {
   const [subject, setSubject] = useState(user?.subjects?.[0] || 'General');
   const [error, setError] = useState('');
 
-  const subjects = user?.subjects?.length ? user.subjects : ['General'];
+  const subjects = user?.subjects?.length ? user.subjects : ['General','Nodejs','MERN'];
 
   useEffect(() => {
     listQuizzes()

@@ -66,7 +66,7 @@ export default function Notes() {
   const [files, setFiles] = useState([]);
   const [saving, setSaving] = useState(false);
 
-  const subjects = user?.subjects?.length ? user.subjects : ['General'];
+  const subjects = user?.subjects?.length ? user.subjects : ['General',"Nodejs","MERN","DBMS"];
 
   const load = useCallback(() => {
     listNotes()
